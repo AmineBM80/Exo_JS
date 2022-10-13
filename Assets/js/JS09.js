@@ -4,7 +4,7 @@ let numero2 = parseInt(prompt("Entrez un autre numéro"));
 let img = document.createElement("img");
 img.src = "src/img/papillon.jpg";
 
-var div = document.getElementById("x");
+let div = document.getElementById("x");
 div.appendChild(img);
 
 let n3 = document.createElement('p');
