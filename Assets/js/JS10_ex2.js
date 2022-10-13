@@ -21,8 +21,15 @@ function InitTab()
 
 function AfficheTab()
 {
-  const points = tableau;
-  document.getElementById("demo").innerHTML = points;
+  document.getElementById("demo").innerHTML = ("<br> Les valeurs contenues dans le tableau sont les suivantes : " + tableau);
+
+  let contenu = "<ul>";
+  for(i=0; i<tableau.length; i++){
+      contenu += "<li>" + tableau[i] + "</li>";
+  }
+  contenu += "</ul>";
+
+  document.getElementById("tableaffichage").innerHTML = contenu;
 }
 
 function SaisieTab()
@@ -39,7 +46,7 @@ function SaisieTab()
 function RechercheTab()
 {
   let valeurs = parseInt(prompt("Entrez le rang de la valeurs voulant être récupéré"));
-  document.getElementById("demo").innerHTML = ("Le numéro rentrez au rang " + valeurs + " est : " + tableau[valeurs-1]);
+  document.getElementById("demo").innerHTML = ("<br>Le numéro rentrez au rang " + valeurs + " est : " + tableau[valeurs-1]);
 }
 
 function InfoTab()
@@ -51,7 +58,7 @@ function InfoTab()
   }
   let moyenne = 0;
   moyenne = somme / tableau.length;
-  document.getElementById("demo").innerHTML = ("La moyenne des valeurs du tableau est : " + moyenne + 
+  document.getElementById("demo").innerHTML = ("<br>La moyenne des valeurs du tableau est : " + moyenne + 
   "<br> La somme des valeurs du tableau est : " + somme );
 }
 
@@ -59,14 +66,14 @@ function myFunction1()
 {
   const points = tableau;
   points.sort();
-  document.getElementById("demo").innerHTML = points;
+  document.getElementById("demo").innerHTML = "<br> Par ordre alphabétique les valeurs sont : " + points;
 }
 
 function myFunction2()
 {
   const points = tableau;
   points.sort(function(a, b){return a - b});
-  document.getElementById("demo").innerHTML = points;
+  document.getElementById("demo").innerHTML = "<br> Par ordre numérique les valeurs sont : " + points;
 }
 
 // function Tri()
