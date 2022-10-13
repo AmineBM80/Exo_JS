@@ -1,18 +1,22 @@
 /*Variables*/
 let tableau;
+let y;
 
 function GetInteger()
 {
-  let integer = prompt("entrez un entier !");
-  while(integer != parseInt(integer))
+  y = Number(prompt("Votre tableau comportera combien de valeurs?"));
+  
+  while(y != parseInt(y))
   {
-  integer = prompt("ENTRÉE ERRONÉES !!! Entrez uniquement un entier");
+    y = Number(prompt("ENTRÉE ERRONÉES !!! Entrez uniquement un entier"))
+    console.log("chiffre décimal");
   }
 }
 
 function InitTab()
 {
-  tableau = Array(parseInt(prompt("Votre tableau comportera combien de valeurs?")));
+  GetInteger();
+  tableau = new Array(y);
 }
 
 function AfficheTab()
