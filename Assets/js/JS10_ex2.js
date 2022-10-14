@@ -76,6 +76,22 @@ function myFunction2()
   document.getElementById("demo").innerHTML = "<br> Par ordre numérique les valeurs sont : " + points;
 }
 
+function maximum()
+{
+  const points = tableau;
+  myFunction2();
+  let max = points[tableau.length-1];
+  document.getElementById("demo").innerHTML = "<br> La valeur maximum du tableau est : " + max;
+}
+
+function minimum()
+{
+  const points = tableau;
+  myFunction2();
+  let max = points[0];
+  document.getElementById("demo").innerHTML = "<br> La valeur minimum du tableau est : " + max;
+}
+
 // function Tri()
 // {
 //   SaisieTab();
