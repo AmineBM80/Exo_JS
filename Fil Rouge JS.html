@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet fil Rouge</title>
+    <script src="Assets/js/fil _rouge.js" async></script>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+
+    <h2>Vos coordonnées :</h2>
+    <br>
+    <div id="obligation">* Ces zones sont obligatoire pour envoyer le formulaire</div>
+    <br>
+
+    <form id="form2" name="form2" onSubmit="return verif(this);">
+
+        <div class="formulaire">
+        <label for="Societe" class="renseignement">Société :</label>
+        <input type="text" name="Societe" class="formulaire" required minlength="1" value=""/> <div class="asterisque_red"> * </div>
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="p_contact" class="renseignement">Personne à contacter :</label>
+        <input type="text" name="p_contact" class="formulaire" required minlength="1" value=""/> <div class="asterisque_red"> * </div>
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="Adresse_entreprise" class="renseignement">Adresse de l'entreprise :</label>
+        <textarea name="Adresse_entreprise"  id="01" class="formulaire"> </textarea> <div  class="asterisque_none"> * </div>
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="Zip" class="renseignement">Code postal :</label>
+        <input type="text" name="Zip" class="formulaire" required minlength="5" required maxlength="5" value="" /> <div class="asterisque_red"> * </div> 
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="City" class="renseignement">Ville :</label>
+        <input type="text" name="Ville" class="formulaire" required minlength="1" value="" /> <div class="asterisque_red"> * </div> 
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="mail" class="renseignement">E-mail :</label>
+        <input type="text" name="mail" class="formulaire" required minlength="1" value="" /> <div class="asterisque_red"> * </div> 
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="Phone" class="renseignement">Téléphone :</label>
+        <input type="text" name="Phone" class="formulaire" value="" /> <div  class="asterisque_none"> * </div>
+        </div>
+        <br>
+
+        <div class="formulaire">
+        <label for="environement" class="renseignement">Sélectionnez l'environement technique du projet :</label>
+        <textarea name="environement"  id="02" class="formulaire"> </textarea> <div  class="asterisque_none"> * </div>
+        </div>
+        <br>
+        <select name="Choix" id="Choix_1">
+            <option value="Choisissez">Choisissez</option>
+            <option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual_basic">Visual Basic</option>
+            <option value="Power_Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Windows_NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL_Server">SQM Server</option>
+            <option value="Oracles">Oracles</option>
+            <option value="Autres">Autres...</option>
+        </select>
+
+        <br>
+
+        <div id="Bouton">
+        <input type="submit" id="idSubForm3" name="subForm3" value="Envoyer" onsubmit="verif()" />
+        <input type="submit" id="idSubForm4" name="subForm4" value="Effacer" onclick="" />
+        </div>
+        
+    </form>
+
+</body>
+</html>

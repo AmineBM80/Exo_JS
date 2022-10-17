@@ -1,0 +1,66 @@
+#obligation {
+    font-size: 13pt;
+    color :#da1e1e;
+    font-style: Arial;
+    margin-left: 10%;
+}
+
+h2 {
+    font-size: 30pt;
+    color :#000000;
+    font-style: Arial;
+}
+
+form
+{
+    display: block;
+    width: 80%;
+    margin-bottom: 15pt;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.renseignement {
+    display: block;
+    margin-right: auto;
+    width: 80%;
+}
+
+.formulaire
+{
+    display: flex;
+    margin-right: auto;
+    width: 100%;
+}
+
+.asterisque_red
+{
+    display: flex;
+    color :#da1e1e;
+}
+
+#Bouton
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+#idSubForm3
+{
+    display: flex;
+    margin: 5px;
+}
+
+#idSubForm4
+{
+    display: flex;
+    margin: 5px;
+}
+
+.asterisque_none
+{
+    display: flex;
+    color :#ffffff;
+}
