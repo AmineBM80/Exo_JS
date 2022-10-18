@@ -40,7 +40,7 @@ function total()
         TOT += PORT;
     }
 
-    if (TOT > 200)
+    if ((TOT > 200) && (TOT < 500))
     {
         TOT = TOT * (90/100); // Remise de 10%
         PORT = TOT * (2/100);
@@ -54,11 +54,7 @@ function total()
     if (TOT > 500)
     {
         TOT = TOT * (90/100); // Remise de 10%
-        PORT = TOT * (2/100);
-        if(PORT < 6)
-        {
-            PORT = 6;
-        }
+        PORT = 0
         TOT += PORT;
     }
 
