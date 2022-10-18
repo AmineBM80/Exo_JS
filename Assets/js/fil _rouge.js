@@ -2,7 +2,7 @@ let societe = document.form2.Societe.value
 let filtre = new RegExp("^[A-Za-z]+$");
 let filtre_num = new RegExp("^[0-9]*$");
 let filtre_city = new RegExp("[A-Za-z]+$");
-let filtre_mail = new RegExp("^[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$")
+let filtre_mail = new RegExp("^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$")
 let resultat_societe;
 let resultat_p_contact;
 let code_postal;
@@ -15,7 +15,7 @@ function verif()
     resultat_p_contact = filtre.test(document.form2.p_contact.value);
     code_postal = filtre_num.test(document.form2.Zip.value);
     resultat_ville = filtre_city.test(document.form2.Ville.value);
-    resultat_mail = filtre_city.test(document.form2.mail.value);
+    resultat_mail = filtre_mail.test(document.form2.mail.value);
 
     if (resultat_societe != true)
     {

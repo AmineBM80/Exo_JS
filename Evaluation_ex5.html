@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Assets/js/Evaluation_ex5.js" async></script>
+    <link rel="stylesheet" href="Assets/css/style_eval_ex5.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="entete_contact">
+            <img src="src/img/jarditou_logo.jpg" class="box_entete_contact" id="img1_contact"  alt="Jarditou Logo">
+            <div class="box_entete_contact" id="slogan_contact">Tout le jardin</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img src="src/img/promotion.jpg" alt="les_promos_de_jarditou" id="img2_contact" title="les_promos_de_jarditou">
+
+    <section class="main_contact">
+
+        <article class="form">
+
+
+            <h2>Contact</h2>
+            
+            <br>
+            <p>*Ces zones sont obligatoires</p>
+
+            <form name="form1" id="form1">
+        
+                <fieldset>
+                    <legend> Vos Coordonnées</legend>
+                    <label for="nom">Votre Nom*:</label>
+                    <input type="text" name="nom" id="nom" required minlength="1" value=""><br>
+                    <!-- <input type="text" name="Societe" class="formulaire" required minlength="1" value=""/>  -->
+                    <label for="prenom">Votre prénom*:</label>
+                    <input type="text" name="prenom" id="prenom"><br>
+                    <br>
+                    <label for="sexe">Sexe* :</label>
+                    <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
+                    <input type="radio" name="sexe" value="Masculin" > Masculin 
+                    <br>
+                    <br>
+                    <label for="date">Date de naissance* :</label>
+                    <input type="date" name="ddn" id="date"><br>
+                    <label for="cp">Code postal* :</label>
+                    <input type="text" name="cp" id="cp"><br>
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse"><br>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville"><br>
+                    <label for="email_2"> Email* :</label>
+                    <input type="email" placeholder="dave.loper@afpa.fr" name="email_2" id="email_2" ><br>
+
+                </fieldset>
+            
+                <br>
+            
+                <fieldset>
+            
+                    <legend>Votre demande </legend>
+            
+                    <label for="sujet">Sujet* :</label>
+                    <select id="sujet">
+                    <option value="veuillez séléctionner un sujet" selected>Veuillez séléctionner un sujet</option>
+                    <option value="commandes">Mes Commandes
+                    
+                    <option value="autres">Autres</option>
+                    </select>    
+                    <br>
+                    <label for="votre_question">Votre question* :</label>
+                    <textarea name="votre_question" id="votre_question" cols="30" rows="3"></textarea>
+            
+                </fieldset>
+                
+                <br>
+            
+                <input type="Checkbox" name="CGU" value="CGU"> * J'accepte le traitement informatique de ce formulaire
+            
+                <br>
+                <br>
+                
+                <div id="Bouton">
+                    <input type="submit" id="idSubForm3" name="subForm3" value="Envoyer" onsubmit="verif()" />
+                    <input type="reset" id="idSubForm4" name="subForm4" value="Effacer" />
+                </div>
+
+            </form>
+
+        </article>   
+        
+        <aside class="form2">[Colonne droite]</aside> 
+    </section>        
+
+    <br>
+    
+    <footer>
+        <br>
+
+        <ul>
+            <li><a href="#">Mention légales</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">Plan du site</a></li>
+        </ul>
+    
+    </footer>
+
+</body>
+</html>

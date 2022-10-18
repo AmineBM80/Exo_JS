@@ -24,4 +24,4 @@ else
         n3.textContent = numero1+" x "+numero2+" = "+numero1*numero2;
         document.body.appendChild(n3);
     }
-}    
+}
