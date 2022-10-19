@@ -20,26 +20,31 @@ function verif()
     if (resultat_societe != true)
     {
         alert("Dans société n'écrivez que des caractères alphabetique");
+        return false;
         console.log(resultat_societe);
     }
 
     if (resultat_p_contact != true)
     {
         alert("Dans la catégorie \"personne à contacter\" n'écrivez que des caractères alphabétique");
+        return false;
     }
 
     if (code_postal != true)
     {
         alert("Entrez le code postal sur 5 chiffres SVP !");
+        return false;
     }
 
     if (resultat_ville != true)
     {
         alert("Entrés étronée ou oubliée ! Entrez la ville !")
+        return false;
     }
 
     if (resultat_mail != true)
     {
         alert("Entrés étronée ou oubliée ! Entrez le mail !")
+        return false;
     }
 }

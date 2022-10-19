@@ -36,7 +36,7 @@ function calcul(operateur, n1, n2){
         }
 } 
 
-alert(calcul(operateur, n1, n2))
+alert(calcul(operateur, n1, n2));
 
 // switch (operateur){
 //        case "+" : alert(n1 + n2); break;
