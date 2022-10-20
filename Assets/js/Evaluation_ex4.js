@@ -29,6 +29,7 @@ function total()
         TOT += PORT;
     }
 
+
     if ((100 <= TOT) && (TOT <= 200))
     {
         TOT = TOT * (95/100); // Remise de 5%
@@ -40,22 +41,25 @@ function total()
         TOT += PORT;
     }
 
-    if ((TOT > 200) && (TOT < 500))
-    {
-        TOT = TOT * (90/100); // Remise de 10%
-        PORT = TOT * (2/100);
-        if(PORT < 6)
-        {
-            PORT = 6;
-        }
-        TOT += PORT;
-    }
+    if (TOT > 200){
 
-    if (TOT > 500)
-    {
         TOT = TOT * (90/100); // Remise de 10%
-        PORT = 0
-        TOT += PORT;
+
+        if ((TOT > 200) && (TOT < 500))
+        {
+            PORT = TOT * (2/100);
+            if(PORT < 6)
+            {
+                PORT = 6;
+            }
+            TOT += PORT;
+        }
+
+        if (TOT > 500)
+        {
+            PORT = 0
+            TOT += PORT;
+        }
     }
 
     document.getElementById("total").innerHTML = "Le total a payer est de : " + TOT + " €";
