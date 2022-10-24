@@ -37,7 +37,7 @@
             <br>
             <p>*Ces zones sont obligatoires</p>
 
-            <form name="form1" id="form1" onSubmit="return verif(this);">
+            <form name="form1" id="form1">
         
                 <fieldset>
                     <legend> Vos Coordonnées</legend>
@@ -51,8 +51,9 @@
 
                     <br>
                     <label for="sexe">Sexe* :</label>
-                    <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
-                    <input type="radio" name="sexe" value="Masculin" > Masculin 
+                    <input type="radio" name="sexe" value="Féminin" id="F"> Féminin
+                    <input type="radio" name="sexe" value="Masculin" id="M"> Masculin 
+                    <span id="sexe_manquant"></span>
                     <br>
                     <br>
                     <label for="date">Date de naissance* :</label>
@@ -64,11 +65,11 @@
                     <span id="cp_manquant"></span><br>
 
                     <label for="adresse">Adresse :</label>
-                    <input type="text" name="adresse" id="adresse">
+                    <input type="text" name="adresse" id="adresse" required minlength="1">
                     <span id="adresse_manquant"></span><br>
 
                     <label for="ville">Ville :</label>
-                    <input type="text" name="ville" id="ville">
+                    <input type="text" name="ville" id="ville" required minlength="1">
                     <span id="ville_manquant"></span><br>
                     
                     <label for="email_2"> Email* :</label>
@@ -88,7 +89,8 @@
                         <option value="veuillez séléctionner un sujet" selected>Veuillez séléctionner un sujet</option>
                         <option value="commandes">Mes Commandes
                         <option value="autres">Autres</option>
-                    </select>    
+                    </select>
+                    <span id="sujet_manquant"></span>
                     <br>
                     <label for="votre_question">Votre question* :</label>
                     <textarea name="votre_question" id="votre_question" cols="30" rows="3" minlength="1"></textarea>
