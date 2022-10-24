@@ -56,7 +56,7 @@ function verif()
 
     if (resultat_question != true)
     {
-        alert("Dans nom n'écrivez que des caractères alphabetique");
+        alert("N'oubliez pas votre question");
         return false;
     }
 }

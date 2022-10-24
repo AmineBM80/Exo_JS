@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Assets/js/Evaluation_ex5.js" async></script>
     <link rel="stylesheet" href="Assets/css/style_eval_ex5.css">
 </head>
 <body>
@@ -43,12 +42,12 @@
                 <fieldset>
                     <legend> Vos Coordonnées</legend>
                     <label for="nom">Votre Nom*:</label>
-                    <input type="text" name="nom" id="nom" required minlength="1"><br>
-                    <span id="nom_manquant"></span>
+                    <input type="text" name="nom" id="nom" required minlength="1">
+                    <span id="nom_manquant"></span><br>
 
                     <label for="prenom">Votre prénom*:</label>
-                    <input type="text" name="prenom" id="prenom" required minlength="1"><br>
-                    <span id="prenom_manquant"></span>
+                    <input type="text" name="prenom" id="prenom" required minlength="1">
+                    <span id="prenom_manquant"></span><br>
 
                     <br>
                     <label for="sexe">Sexe* :</label>
@@ -57,24 +56,24 @@
                     <br>
                     <br>
                     <label for="date">Date de naissance* :</label>
-                    <input type="date" name="ddn" id="date"><br>
-                    <span id="ddn_manquant"></span>
+                    <input type="date" name="ddn" id="date">
+                    <span id="ddn_manquant"></span><br>
 
                     <label for="cp">Code postal* :</label>
-                    <input type="text" name="cp" id="cp" required minlength="5" maxlength="5"><br>
-                    <span id="cp_manquant"></span>
+                    <input type="text" name="cp" id="cp" required minlength="5" maxlength="5">
+                    <span id="cp_manquant"></span><br>
 
                     <label for="adresse">Adresse :</label>
-                    <input type="text" name="adresse" id="adresse"><br>
-                    <span id="adresse_manquant"></span>
+                    <input type="text" name="adresse" id="adresse">
+                    <span id="adresse_manquant"></span><br>
 
                     <label for="ville">Ville :</label>
-                    <input type="text" name="ville" id="ville"><br>
-                    <span id="ville_manquant"></span>
+                    <input type="text" name="ville" id="ville">
+                    <span id="ville_manquant"></span><br>
                     
                     <label for="email_2"> Email* :</label>
-                    <input type="email" placeholder="dave.loper@afpa.fr" name="email_2" id="email_2" required minlength="1"><br>
-                    <span id="email_manquant"></span>
+                    <input type="email" placeholder="dave.loper@afpa.fr" name="email_2" id="email_2" required minlength="1">
+                    <span id="email_manquant"></span><br>
 
                 </fieldset>
             
@@ -93,6 +92,7 @@
                     <br>
                     <label for="votre_question">Votre question* :</label>
                     <textarea name="votre_question" id="votre_question" cols="30" rows="3" minlength="1"></textarea>
+                    <span id="question_manquant"></span>
             
                 </fieldset>
                 
@@ -128,5 +128,6 @@
     
     </footer>
 
+    <script src="Assets/js/Evaluation_ex5 copy.js"></script>
 </body>
 </html>

@@ -5,6 +5,12 @@ document.getElementById("tab").innerHTML = "Les prénoms du tableau sont : <br>"
 function prenomRemoved()
 {
     let prenom = String(prompt("Entrez le prénom à retirer de la liste"));
+
+    while(tab.indexOf(prenom) == -1)
+    {
+        alert(prenom  + " n'est pas dans la liste des prénoms");
+        prenom = String(prompt("Entrez le prénom à retirer de la liste"));
+    }
     
     for (i=0; i<tab.length; i++)
     {
