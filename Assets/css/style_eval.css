@@ -1,0 +1,32 @@
+#exercice{
+    display: block;
+
+}
+
+#eval,#eval2{
+    display: flex;
+    width: 100%;
+
+}
+
+#ex1,#ex2,#ex3,#ex4{
+    width: 50%;
+    margin: 5px;
+    border : 1px solid black;
+}
+
+#newtab,#tab{
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: Arial;
+    letter-spacing: 0.2mm;
+    word-spacing: 0.8mm;
+    color: rgb(18, 18, 46);
+}
+
+h2{
+    font-family: Arial;
+    letter-spacing: 0.2mm;
+    word-spacing: 0.8mm;
+    color: rgb(218, 6, 6);
+}

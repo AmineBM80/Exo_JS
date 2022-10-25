@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="Assets/css/style_eval.css">
+</head>
+<body>
+    <div id="exercice">
+        <div id="eval">
+            <!-- //***********************************************************************************************************//
+            //***************************************************EXERCICE 1***************************************************//
+            //****************************************************************************************************************// -->
+            <div id="ex1" class="exo1">
+                <h2> EXERCICE 1 : Calcul du nombre de jeunes, de moyens et de vieux</h2>
+
+                <button id="bouton_ex1" onclick="SaisieTab()">Entrez de tableau</button> <br>
+
+                <div id="jeune"></div>
+                <div id="moyen"></div>
+                <div id="vieux"></div>
+                <br>
+                <div id="tablejeune"></div>
+                <div id="tablemoyen"></div>
+                <div id="tablevieux"></div>
+                <div id="nbrvaleurs"></div>
+            </div>
+
+            <!-- //***********************************************************************************************************//
+            //***************************************************EXERCICE 2***************************************************//
+            //****************************************************************************************************************// -->
+            
+            <div id="ex2">
+                <h2> EXERCICE 2 : Table de TableMultiplication</h2>
+                <button id="bouton_ex2" onclick="TableMultiplication()">Avoir la table de TableMultiplication</button> <br>
+                <div id="multiplication"></div>
+
+            </div>
+        </div>
+
+        <div id="eval2">
+            <!-- //***********************************************************************************************************//
+            //***************************************************EXERCICE 3***************************************************//
+            //****************************************************************************************************************// -->
+
+            <div id="ex3">
+                <h2>Exercice 3 : recherche d'un prénom</h2>
+                <p id="tab"></p>
+                <br>
+                <button onclick="prenomRemoved()">Retirez un prénom</button>
+                <br>
+                <p id="newtab"></p>
+            </div>
+
+            <!-- //***********************************************************************************************************//
+            //***************************************************EXERCICE 4***************************************************//
+            //****************************************************************************************************************// -->
+            <div id="ex4">
+                <h2> Exercice 4 : total d'une commande </h2>
+                <div id="tab"></div>
+                <br>
+                <button onclick="total()">Affichez le total</button>
+                <br>
+                <div id="total"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/js/Evaluation_ex1_a_ex4.js" ></script>
+</body>
+</html>
